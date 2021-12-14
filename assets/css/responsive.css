@@ -1,0 +1,278 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    nav.eco-main-menu-navigation ul.eco-nav-main-menu li a{
+        padding: 17px 14.9px
+    }
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    ul.eco-official-contact li:last-child {
+        display: none
+    }
+    .eco-touch-area .eco-touch-eontent span{
+        font-size: 13px
+    }
+    nav.eco-main-menu-navigation ul.eco-nav-main-menu li a{
+        padding: 17px 8.6px
+    }
+    nav.eco-main-menu-navigation.sticky.fixed{
+        left: 3%;
+        width: 94%
+    }
+    .eco-single-slider-area .eco-slingle-slider-content h1, .eco-single-slider-area .eco-slingle-slider-content p{
+        width: 100%
+    }
+    .eco-about-main-content .col-lg-3:last-child, .eco-about-main-content .col-md-4:last-child{
+        margin-bottom: 0
+    }
+    .eco-about-main-content .col-lg-3, .eco-about-main-content .col-md-4{
+        margin-bottom: 30px
+    }
+    ul.service-lists li{
+        margin-top: 30px!important
+    }
+    .eco-blog-center .media{
+        display: block
+    }
+    .eco-blog-center .post-thumb.media-left{
+        width: 100%;
+        height: 250px
+    }
+    .eco-blog-center .media-body {
+        padding: 10px
+    }
+    .eco-footer-about a>img{
+        height: 50px;
+        width: 170px;
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+
+    #menu,
+    nav.eco-main-menu-navigation.sticky.fixed,
+    nav.eco-main-menu-navigation.sticky {
+        display: none !important
+    }
+    .slicknav_menu,
+    .responsive-mobile-menu-area {
+        display: block
+    }
+    .slicknav_menu{
+        padding: 5px 0px;
+    }
+    .slicknav_menu, a.slicknav_btn{
+        background: #FFA700
+    }
+    .slicknav_menu .slicknav_menutxt{
+        text-shadow: none
+    }
+    .responsive-mobile-menu-area {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between
+    }
+    .eco-logo-area {
+        width: 40%;
+        margin: 10px
+    }
+    .eco-logo-area img {
+        width: 160px;
+        height: 34px
+    }
+    .responsive-mobile-menu {
+        width: 60%
+    }
+    .slicknav_nav .slicknav_arrow, ul.eco-official-contact, .eco-header-content-area-start, .eco-single-client-slider .media-left, .owl-nav {
+        display: none
+    }
+    .slicknav_nav a {
+        padding: 11px 11px;
+        margin: 0px;
+        font-size: 16px;
+        text-transform: uppercase
+    }
+    .slicknav_nav .slicknav_row:hover, .slicknav_nav a:hover{
+        background: #1B1F20;
+        color: #FFA700;
+        outline: 0;
+        margin: 0;
+        border-radius: 0
+    }
+    .eco-social-icon-area {
+        text-align: center
+    }
+    .eco-single-slider-area .eco-slingle-slider-content{
+        padding: 15px
+    }
+    .eco-single-slider-area .eco-slingle-slider-content h1{
+        font-size: 35px;
+        line-height: 35px;
+        width: 100%
+    }
+    section.eco-slider-area-start, .eco-single-slider-area{
+        height: 75vh
+    }
+    .eco-single-slider-area .eco-slingle-slider-content p{
+        letter-spacing: 1px;
+        font-size: 16px;
+        width: 100%;
+        text-align: justify;
+        line-height: 18px
+    }
+    .df-btn{
+        padding: 10px 20px;
+        margin-top: 22px
+    }
+    
+    .df-pad{
+        padding: 50px 0px
+    }
+    .eco-project-cta-content-body {
+        padding: 0px 15px
+    }
+    .eco-project-cta-content h2{
+        line-height: 35px;
+        margin-bottom: 25px
+    }
+    .eco-about-slide-activer, .eco-about-slider-active .eco-about-single-slider {
+        height: 40vh;
+        margin-top: 30px
+    }
+    .eco-about-main-content, .eco-client-slider-active, .eco-blog-image {
+        margin-top: 30px;
+    }
+    .eco-about-main-content .col-md-3, .eco-services-content-body-start .col-md-4, ul.service-lists li, section.eco-motivate-area-start .col-md-4, .eco-client-brands .col-md-4, .eco-blog-center, .eco-single-blog-content, .eco-history-content-start .col-md-3{
+        margin-bottom: 30px
+    }
+    .eco-about-main-content .col-md-3:last-child,.eco-services-content-body-start .col-md-4:last-child, section.eco-motivate-area-start .col-md-4:last-child, .eco-single-client-brand img, .eco-client-brands .col-md-4:last-child, .eco-history-content-start .col-md-3:last-child, .eco-single-widget:last-child, .eco-contact-address p:last-child {
+        margin-bottom: 0
+    }
+    .eco-why-choose-area-start {
+        padding: 50px 0px;
+    }
+    .eco-project-title-area h4{
+        padding-bottom: 40px
+    }
+    .eco-why-choose-body .col-md-3:last-child  .eco-single-choose-area {
+        margin: 0;
+    }
+    .eco-single-project-counter .media-body span.counter{
+        font-size: 35px
+    }
+    .eco-single-project-counter .media-body h5{
+        font-size: 16px
+    }
+    .eco-single-project-counter .post-thumb{
+        width: 50px;
+        height: 50px
+    }
+    .eco-single-project-counter .post-thumb span{
+        padding: 10px;
+        font-size: 19px
+    }
+    ul.service-lists li .service-image, .service-image a>img{
+        width: 100%;
+        height: 250px
+    }
+    ul.service-lists li .service-content, .eco-feature-content .mix{
+        width: 100%
+    }
+    .eco-feature-btn-area ul{
+        display: inline-table
+    }
+    .eco-feature-btn-area ul li{
+        padding: 8px;
+        display: inline-block
+    }
+    .eco-feature-content{
+        margin-top: 30px
+    }
+    .eco-single-motivate-area-start h4{
+        margin-bottom: 7px
+    }
+    .eco-client-slider-active{
+        max-height: 100%
+    }
+    .eco-single-client-slider .post-thumb.media-left {
+        display: block
+    }
+    .eco-single-client-brand img{
+        padding: 10px;
+        height: 115px
+    }
+    .eco-single-faq-area-content .card-header a{
+        padding: 15px 23px 15px 10px
+    }
+    .eco-single-blog-content{
+        height: 300px
+    }
+    .eco-blog-center .media{
+        display: block
+    }
+    .eco-blog-center .post-thumb.media-left, .eco-blog-image{
+        width: 100%;
+        height: 250px
+    }
+    .eco-footer-about a>img{
+        height: 40px;
+        width: 165px
+    }
+    footer.eco-footer-area-start{
+        padding-top: 50px
+    }
+    .eco-footer-content{
+        padding-bottom: 50px
+    }
+    .eco-paginate-area-satrt{
+        margin-top: 0px
+    }
+    ul.eco-paginate li a{
+        padding: 5px 15px;
+        font-size: 16px
+    }
+    ul.eco-caregories.eco-tags li a{
+        padding: 6px 10.5px
+    }
+    .eco-single-blog-image img{
+        height: 55vh
+    }
+    .eco-single-info h2{
+        font-size: 25px
+    }
+    .eco-related-tags a{
+        padding: 7px 16px;
+        margin-bottom: 4px
+    }
+    section.eco-single-blog-area-start .eco-sidebar-area {
+        display: none;
+    }
+    .eco-error-content strong{
+        font-size: 135px
+    }
+    .eco-error-content p{
+        font-size: 13px
+    }
+    span.syotimer-cell{
+        padding: 5px 15px
+    }
+    span.syotimer-cell span{
+        font-size: 30px;
+        line-height: 24px
+    }
+    span.syotimer-cell__unit{
+        font-size: 8px!important
+    }
+}

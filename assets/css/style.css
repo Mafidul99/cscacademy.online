@@ -1,0 +1,1967 @@
+@charset "utf-8";
+
+/*
+***********************************
+* Template Name: Eco - Construction and Multipurpose Clean Responsive HTML5 Template
+* Author Name: Prantok104
+* Version: 1.0.0
+* Template By: Prantok104
+
+* This file contains the styling for the actual theme, this is the file you need to edit to change the look of the theme.
+
+The contents of This file are outlined below >>>>
+
+*** SEARCH EACH SECTION AS IT COMMENTS, YOU WILL GET THE RIGHT SECTION.
+
+**************************************************
+**************************************************
+*** CSS TABLE
+
+ 01 - IMPORTED CSS
+ 02 - DEFAULT CSS
+ 03 - SCROLLBAR CSS
+ 04 - PRELOADER CSS
+ 05 - PRE HEADER CSS
+ 06 - HEADER CSS
+ 07 - SLIDER CSS
+ 08 - PROJECT CTA CSS
+ 09 - ABOUT CSS
+ 10 - PROJECT TITLE CSS
+ 11 - WHY CHOOSE CSS
+ 12 - PROJECT COUNTER CSS
+ 13 - SERVICE CSS
+ 14 - EXPART CSS
+ 15 - FEATURE CSS
+ 16 - MOTIVATE CSS
+ 17 - CLIENTS CSS
+ 18 - FAQ CSS
+ 19 - BLOG CSS
+ 20 - BREADCUM CSS
+ 21 - HISTORY CSS
+ 22 - PAGINATE CSS
+ 23 - SIDEBAR CSS
+ 24 - BLANK PAGE CSS
+ 25 - ERROR PAGE CSS
+ 26 - COMMINGSOON CSS
+ 27 - CONTACT CSS
+ 28 - SINGLE PAGE CSS
+ 29 - FOOTER CSS
+ */
+
+/*================================================
+01 - IMPORTED CSS
+==================================================*/
+
+@import url('../../../external.html?link=https://fonts.googleapis.com/css2?family=Kanit:wght@200;500;600;700&amp;display=swap');
+
+@import url('../../../external.html?link=https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;display=swap');
+
+/*================================================
+02 - DEFAULT CSS
+==================================================*/
+* {
+    margin: 0px;
+    padding: 0px
+}
+body{
+    color: #1B1F20
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif
+}
+.wow{
+    visibility: hidden
+}
+a:visited,
+a:hover,
+a:link,
+a:active {
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    margin: 0px
+}
+
+img {
+    width: 100%;
+    height: 100%
+}
+
+.custom-bg {
+    background: #FFA700
+}
+
+.custom-color {
+    color: #FFA700
+}
+
+.df-pad {
+    padding: 70px 0px
+}
+
+.df-mar-bot {
+    margin-bottom: 70px
+}
+
+.df-btn {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    padding: 15px 43px;
+    margin-top: 35px;
+    background: #FFA700;
+    position: relative;
+    z-index: 1
+}
+.df-btn:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    content: '';
+    background: #1B1F20;
+    z-index: -1;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.df-link {
+    display: inline-block;
+    color: #FFA700;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 15px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    position: relative;
+}
+.df-link:after {
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f101"
+}
+.title-image{
+    width: 33px;
+    height: 31px
+}
+.owl-carousel {
+    z-index: 0
+}
+
+/*================================================
+03 - SCROLLBAR CSS
+==================================================*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1B1F20;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFA700;
+}
+
+::-moz-selection {
+    background: #FFA700;
+    color: #fff
+}
+
+::selection {
+    background: #FFA700;
+    color: #fff
+}
+
+/*================================================
+04 - PRELOADER CSS
+==================================================*/
+
+.loader-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    background: #FFA700
+}
+
+.loader-bg .loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px)
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    border: 1em solid #ffffff;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: loader 2s linear infinite;
+            animation: loader 2s linear infinite;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+
+.loader:before {
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s
+}
+
+@-webkit-keyframes loader {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+
+    50% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+}
+
+@keyframes loader {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+
+    50% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+}
+
+/*================================================
+05 - PRE HEADER CSS
+==================================================*/
+.eco-pre-header-area-start{
+    width: 100%;
+    height: auto;
+    padding: 5px 0px;
+    background: #1B1F20
+}
+.eco-official-contact-area ul.eco-official-contact li, .eco-social-icon-area ul.eco-social-icon li {
+    display: inline-block;
+    color: #fdffff
+}
+.eco-official-contact-area ul.eco-official-contact li {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500
+}
+.eco-official-contact-area ul.eco-official-contact li a{
+    color: #ffffff
+}
+.eco-official-contact-area ul.eco-official-contact li a>span {
+    margin-right: 5px
+}
+.eco-social-icon-area {
+    text-align: right
+}
+.eco-social-icon-area ul.eco-social-icon li a {
+    display: inline-block;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 21px
+}
+/*================================================
+06 - HEADER CSS
+==================================================*/
+.eco-header-content-area-start {
+    padding: 10px 0px 0px
+}
+.eco-header-content-area-start .eco-logo-area {
+    width: 100%;
+    height: 50%;
+}
+.eco-header-content-area-start .eco-logo-area a {
+    display: inline-block
+}
+.eco-header-content-area-start .eco-logo-area a>img {
+    width: 100%;
+    height: 100%;
+}
+.eco-touch-area .eco-touch-icon {
+    margin-right: 10px
+}
+.eco-touch-area .eco-touch-icon>span {
+    font-size: 25px;
+    color: #FFA700
+}
+.eco-touch-area .eco-touch-eontent a{
+    color: #1B1F20
+}
+.eco-touch-area .eco-touch-eontent strong {
+    display: block;
+    line-height: 14px
+}
+.eco-touch-area .eco-touch-eontent span {
+    color: #8ba6ad;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px
+}
+.slicknav_menu, .responsive-mobile-menu-area {
+    display: none;
+}
+nav.eco-main-menu-navigation.sticky {
+    background: #1B1F20;
+    width: 100%;
+    position: relative;
+    top: 28px;
+    z-index: 9
+}
+nav.eco-main-menu-navigation.sticky.fixed {
+    position: fixed;
+    z-index: 9999;
+    left: 8%;
+    top: 0;
+    width: 84%;
+    -webkit-animation: fadeInDown 1.5s both;
+            animation: fadeInDown 1.5s both;
+}
+nav.eco-main-menu-navigation ul.eco-nav-main-menu li {
+    display: inline-block;
+    position: relative;
+
+}
+nav.eco-main-menu-navigation ul.eco-nav-main-menu li a {
+    display: inline-block;
+    padding: 17px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+nav.eco-main-menu-navigation ul.eco-nav-main-menu li a:hover, nav.eco-main-menu-navigation ul.eco-nav-main-menu li:hover a{
+    color: #FFA700
+}
+nav.eco-main-menu-navigation ul.eco-nav-main-menu li a.active{
+    background: #FFA700
+}
+nav.eco-main-menu-navigation ul.eco-nav-main-menu li a.active:hover{
+    color: #ffffff
+}
+nav.eco-main-menu-navigation ul.eco-nav-main-menu li ul.eco-dropdown-menu {
+    position: absolute;
+    left: 0;
+    background: #1B1F20;
+    top: 75px;
+    width: 250px;
+    visibility: hidden;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+nav.eco-main-menu-navigation ul.eco-nav-main-menu li:hover ul.eco-dropdown-menu{
+    top: 55px;
+    visibility: visible;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}
+nav.eco-main-menu-navigation ul.eco-nav-main-menu li ul.eco-dropdown-menu li {
+    display: block;
+    border-bottom: 1px solid #FFA700
+}
+nav.eco-main-menu-navigation ul.eco-nav-main-menu li ul.eco-dropdown-menu li a {
+    display: block
+}
+nav.eco-main-menu-navigation ul.eco-nav-main-menu li:hover ul.eco-dropdown-menu li a{
+    color: #ffffff
+}
+nav.eco-main-menu-navigation ul.eco-nav-main-menu li ul.eco-dropdown-menu li a:hover{
+    color: #FFA700
+}
+nav.eco-main-menu-navigation ul.eco-nav-main-menu li ul.eco-dropdown-menu li:last-child {
+    border: 0
+}
+/*================================================
+07 - SLIDER CSS
+==================================================*/
+section.eco-slider-area-start, .eco-single-slider-area {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+.eco-single-slider-area {
+    position: relative;
+    display: table;
+    z-index: 1
+}
+.eco-single-slider-area:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    content: '';
+    z-index: -1;
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"
+}
+.eco-single-slider-area .eco-slingle-slider-content {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 125px
+}
+.eco-single-slider-area .eco-slingle-slider-content h1 {
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 67%;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 15px
+}
+.eco-single-slider-area .eco-slingle-slider-content p {
+    color: #ffffff;
+    width: 50%;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 23px
+}
+.eco-single-slider-area .eco-slingle-slider-content a.df-btn:hover {
+    color: #ffffff
+}
+.eco-single-slider-area .eco-slingle-slider-content a.df-btn:hover:after {
+    width: 100%;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+section.eco-slider-area-start .owl-dots, .eco-about-slider-active .owl-dots{
+    position: absolute;
+    right: 5%;
+    bottom: 40px
+}
+section.eco-slider-area-start .owl-dots .owl-dot.active span, .eco-about-slider-active .owl-dots .owl-dot.active span, .eco-client-slider-active .owl-dots .owl-dot.active span {
+    background: #ffA700;
+}
+section.eco-slider-area-start .owl-dots .owl-dot span, .eco-about-slider-active .owl-dots .owl-dot span, .eco-client-slider-active .owl-dots .owl-dot span {
+    background: #ffffff;
+}
+section.eco-slider-area-start .owl-nav, .eco-about-slider-active .owl-nav{
+    position: absolute;
+    top: 39%;
+    background: #FFA700;
+    width: 100%
+}
+section.eco-slider-area-start .owl-nav button.owl-prev, .eco-about-slider-active .owl-nav button.owl-prev {
+    left: 0;
+    position: absolute
+}
+section.eco-slider-area-start .owl-nav button.owl-next, .eco-about-slider-active .owl-nav button.owl-next {
+    position: absolute;
+    left: auto;
+    right: 0
+}
+section.eco-slider-area-start .owl-nav button.owl-prev:hover, section.eco-slider-area-start .owl-nav button.owl-next:hover, section.eco-slider-area-start .owl-nav button.owl-prev:focus, section.eco-slider-area-start .owl-nav button.owl-next:focus, .eco-about-slider-active .owl-nav button.owl-prev:hover, .eco-about-slider-active .owl-nav button.owl-next:hover, .eco-about-slider-active .owl-nav button.owl-prev:focus, .eco-about-slider-active .owl-nav button.owl-next:focus{
+    background: none;
+    border: 0;
+    outline: 0
+}
+section.eco-slider-area-start .owl-nav button>i, .eco-about-slider-active .owl-nav button>i{
+    font-size: 75px;
+    color: #FFA700
+}
+/*================================================
+08 - PROJECT CTA CSS
+==================================================*/
+.eco-project-cta-content-body {
+    width: 100%;
+}
+.eco-project-cta-content h2{
+    text-transform: uppercase;
+    color: #ffffff
+}
+.eco-peject-cta-btn a.df-btn{
+    background: #ffffff;
+    margin-top: 0px;
+    color: #FFA700
+}
+.eco-peject-cta-btn a.df-btn:hover:after{
+    width: 100%
+}
+
+/*================================================
+09 - ABOUT CSS
+==================================================*/
+
+.eco-about-content-body img {
+    margin-bottom: 10px
+}
+.eco-about-content-body h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #1B1F20
+}
+.eco-about-content-body h3 {
+    margin-bottom: 10px
+}
+.eco-about-content-body p {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #818181
+}
+.eco-about-content-body ul {
+    margin-left: 30px
+}
+.eco-about-content-body ul li {
+    display: block;
+    padding: 4px;
+    font-weight: 500;
+    position: relative;
+    font-size: 14px
+}
+.eco-about-content-body ul li:after {
+    position: absolute;
+    left: -14px;
+    top: 6px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f101";
+    display: inline-block;
+    color: #FFA700
+}
+.eco-about-slide-activer, .eco-about-slider-active .eco-about-single-slider {
+    width: 100%;
+    height: 67vh;
+    position: relative
+}
+.eco-about-main-content {
+    margin-top: 40px
+}
+.eco-single-about-image {
+    height: 180px
+}
+.eco-single-about-content-body {
+    padding: 15px;
+    padding-top: 0
+}
+.eco-single-about-content-body a{
+    color: #FFA700
+}
+.eco-single-about-content-body a>h5 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 12px 0px 5px 0px
+}
+.eco-single-about-content-body p {
+    text-align: justify;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 14px;
+    color: #818181
+}
+.eco-single-about-content-body a.df-link{
+    padding: 0px 0px 0px 15px
+}
+.eco-single-about-content-body a.df-link:after{
+    bottom: 0
+}
+.eco-single-about-content-body a.df-link:hover{
+    color: #FFA700
+}
+.eco-single-about-image a.hyper-link {
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: relative;
+    z-index: 1
+}
+.eco-single-about-image a.hyper-link:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #FFA700;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    z-index: -1;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-single-about-image a.hyper-link>span {
+    position: absolute;
+    left: 38%;
+    top: 38%;
+    color: #ffffff;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-single-about-image a.hyper-link:hover:after, .eco-single-about-image a.hyper-link:hover span{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}
+
+/*================================================
+10 - PROJECT TITLE CSS
+==================================================*/
+.eco-project-title-area {
+    text-align: center;
+    width: 100%
+}
+.eco-project-title-area img {
+    width: 33px;
+    height: 31px;
+    margin-bottom: 10px
+}
+.eco-project-title-area h4 {
+    text-transform: uppercase;
+    padding-bottom: 70px
+}
+/*================================================
+11 - WHY CHOOSE CSS
+==================================================*/
+.eco-why-choose-area-start{
+    padding: 70px 0px 50px 0px
+}
+.eco-why-choose-area-start{
+    background: #EFEFEF
+}
+.eco-single-choose-area {
+    text-align: center;
+    padding: 30px 15px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #e6d3d3;
+    margin-bottom: 30px;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-single-choose-area span {
+    background: #FFA700;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-single-choose-area h5 {
+    text-transform: uppercase;
+    margin-bottom: 10px
+}
+.eco-single-choose-area p {
+    text-align: justify;
+    font-size: 14px;
+    color: #818181;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-single-choose-area:hover{
+    background: #FFA700;
+    color: #ffffff
+}
+.eco-single-choose-area:hover span{
+    background: #ffffff;
+    color: #FFA700
+}
+.eco-single-choose-area:hover p{
+    color: #ffffff
+}
+
+/*================================================
+12 - PROJECT COUNTER CSS
+==================================================*/
+.eco-project-counter-area-start{
+    background: url('../image/slider-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1
+}
+.eco-project-counter-area-start:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #FFA700;
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    z-index: -1
+}
+.eco-single-project-counter {
+    padding: 10px
+}
+.eco-single-project-counter .post-thumb{
+    color: #ffffff;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 60px;
+    height: 60px
+}
+.eco-single-project-counter .post-thumb span{
+    padding: 13px;
+    font-size: 24px;
+    position: absolute;
+    left: 31px
+}
+.eco-single-project-counter .media-body span.counter {
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff
+}
+.eco-single-project-counter .media-body h5 {
+    text-transform: uppercase
+}
+/*================================================
+13 - SERVICE CSS
+==================================================*/
+
+.eco-services-single-image {
+    width: 100%;
+    height: 250px
+}
+.eco-services-single-image a {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+.eco-services-single-image a>img {
+    width: 100%;
+    height: 250px
+}
+.eco-services-single-body {
+    padding: 15px;
+    padding-top: 0
+}
+.eco-services-single-body a{
+    color: #FFA700
+}
+.eco-services-single-body a>h5 {
+    text-transform: uppercase;
+    margin: 10px 0px
+}
+.eco-services-single-body p {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 22px
+}
+.service-image a>img {
+    width: 100%;
+    height: 113px;
+}
+ul.service-lists li {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 23px;
+}
+ul.service-lists li:last-child {
+    margin: 0
+}
+ul.service-lists li .service-image {
+    float: left;width: 30%
+}
+ul.service-lists li .service-content {
+    float: left;
+    width: 70%;
+    padding: 10px
+}
+ul.service-lists li .service-content a{
+    color: #FFA700
+}
+ul.service-lists li .service-content a>h6 {
+    text-transform: uppercase;
+    margin-bottom: 4px
+}
+ul.service-lists li .service-content p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+/*================================================
+14 - EXPART CSS
+==================================================*/
+.eco-expart-area-start{
+    background: #EFEFEF
+}
+.eco-single-expart-content {
+    padding: 15px;
+    background: #ffffff
+}
+.eco-expart-img {
+    width: 100%;
+    height: 320px;
+    position: relative
+}
+.eco-expart-social-icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1
+}
+.eco-expart-social-icon:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #000;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    z-index: -1;
+    -webkit-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+        transform: scale(0.6);
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-expart-social-icon ul.eco-social-icon {
+    position: absolute;
+    left: 20px;
+    top: 45%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+        transform: scale(0.6);
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+
+.eco-expart-content h5 {
+    text-transform: uppercase;
+    color: #1B1F20;
+    margin: 10px 0px 0px 0px
+}
+.eco-expart-content span {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFA700
+}
+.eco-expart-content p {
+    font-size: 14px;
+    text-align: justify;
+    color: #818181;
+    line-height: 20px;
+    margin-top: 15px
+}
+.eco-single-expart-content:hover .eco-expart-social-icon:after, .eco-single-expart-content:hover .eco-expart-social-icon ul.eco-social-icon{
+    -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+        transform: scale(1);
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-single-expart-content:hover .eco-expart-social-icon ul.eco-social-icon{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}
+
+
+/*================================================
+15 - FEATURE CSS
+==================================================*/
+
+.eco-featured-project-area-start{
+    overflow: hidden;
+    width: 100%
+}
+.eco-feature-btn-area {
+    width: 100%
+}
+.eco-feature-btn-area ul {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center
+}
+.eco-feature-btn-area ul li {
+    padding: 10px;
+    text-transform: uppercase;
+    color: #FFA700;
+    background: #fff;
+    -webkit-box-shadow: 2px 2px 19px -7px #818181;
+            box-shadow: 2px 2px 19px -7px #818181;
+    cursor: pointer
+}
+.eco-feature-btn-area ul li.active{
+    background: #FFA700;
+    color: #ffffff
+}
+.eco-feature-content {
+    width: 100%;
+    margin-top: 25px
+}
+.eco-feature-content .mix{
+    display: none
+}
+.eco-feature-content .mix{
+    float: left;
+    width: 33.33%;
+}
+.eco-feature-content .eco-single-feature {
+    float: left;
+    width: 100%;
+    height: 300px;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    z-index: 1
+}
+.eco-single-feature:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    background: #000;
+    z-index: -1;
+    -webkit-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+        transform: scale(0.6);
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-single-feature-body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+        transform: scale(0.6);
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-single-feature-body:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 38%;
+    content: '';
+    background: #FFA700;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    z-index: -1;
+    -webkit-transition: 0.7s ease-in-out;
+    -o-transition: 0.7s ease-in-out;
+    transition: 0.7s ease-in-out
+}
+.eco-single-feature-body a {
+    color: #ffffff;
+    letter-spacing: 1.5px
+}
+.eco-single-feature-body a>h5 {
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 7px;
+    margin-bottom: 10px
+}
+.eco-single-feature-body h5:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 35%;
+    height: 3px;
+    background: #ffffff
+}
+.eco-single-feature-body span {
+    background: #FFA700;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    letter-spacing: 1.2px
+}
+.eco-single-feature:hover:after{
+    -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+        transform: scale(1);
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-single-feature:hover .eco-single-feature-body{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+        transform: scale(1);
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-single-feature:hover .eco-single-feature-body:after{
+    width: 100%;
+    -webkit-transition: 0.7s ease-in-out;
+    -o-transition: 0.7s ease-in-out;
+    transition: 0.7s ease-in-out
+}
+.eco-project-image-popup {
+    position: absolute;
+    left: 46%;
+    top: 46%
+}
+.eco-project-image-popup a {
+    display: inline-block
+}
+.eco-project-image-popup a>span {
+    font-size: 25px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+    display: inline-block;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-project-image-popup a>span:hover {
+    border-color: #FFA700;
+    color: #FFA700
+}
+
+/*================================================
+16 - MOTIVATE CSS
+==================================================*/
+.eco-single-motivate-area-start h4 {
+    margin-bottom: 15px
+}
+.eco-single-motivate-area-start p {
+    font-size: 16px;
+    line-height: 21px
+}
+
+/*================================================
+17 - CLIENTS CSS
+==================================================*/
+.eco-client-slider-active {
+    width: 100%;
+    max-height:240px;
+    background: #efefef;
+    border: 1px solid #cccccc;
+    padding: 12px;
+    border-radius: 5px;
+    position: relative
+}
+.eco-single-client-brand img {
+    width: 100%;
+    height: 103px;
+    padding: 32px 5px;
+    background: #efefef;
+    margin-bottom: 27px;
+    border-radius: 5px
+}
+.eco-single-client-slider.media .media-left span {
+    margin-right: 20px;
+    color: #cccccc;
+    font-size: 30px
+}
+.eco-single-client-slider.media .media-body p {
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 22px;
+}
+.eco-single-client-slider .post-thumb.media-left {
+    width: 80px;
+    height: 80px
+}
+.eco-single-client-slider .post-thumb.media-left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #fff;
+    padding: 5px
+}
+.post-thumb.media-left .media-body {
+    margin-left: 10px
+}
+.eco-single-client-slider .media .media-body {
+    margin-left: 10px
+}
+.eco-single-client-slider .media .media-body h4 {
+    text-transform: uppercase;
+    color: #ffA700;
+    font-size: 20px
+}
+.eco-single-client-slider .media .media-body span {
+    font-size: 12px;
+    font-weight: 700;
+    color: #818181
+}
+.eco-client-slider-active .owl-dots {
+    position: absolute;
+    right: 5%;
+    bottom: 29px;
+}
+.eco-client-slider-active .owl-dots button.active{
+    
+}
+
+/*================================================
+18 - FAQ CSS
+==================================================*/
+.eco-faq-area-start{
+    width: 100%;
+    height: auto;
+    background: #EFEFEF
+}
+.eco-single-faq-area-content .card-header {
+    background: #ffffff;
+    padding: 0
+}
+.eco-single-faq-area-content .card {
+    margin-top: 5px
+}
+.eco-single-faq-area-content .card-header a {
+    display: block;
+    padding: 15px;
+    color: #1B1F20;
+    background: #FFFFFF;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    z-index: 1
+}
+.eco-single-faq-area-content .card-header a:after {
+    position: absolute;
+    right: 7px;
+    top: 16px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f068"
+}
+.eco-single-faq-area-content .card-header a:focus:after{
+    content: "\f067";
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-single-faq-area-content .card-header a.collapsed:after {
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900
+}
+.eco-single-faq-area-content .card-header a:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    content: '';
+    background: #FFA700;
+    z-index: -1
+}
+.eco-single-faq-area-content .card-body p{
+    text-align: justify
+}
+
+/*================================================
+19 - BLOG CSS
+==================================================*/
+.eco-single-blog-content {
+    width: 100%;
+    height: 432px;
+    position: relative;
+    z-index: 1
+}
+.eco-single-blog-content:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #000000;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    z-index: -1
+}
+.eco-single-blog-content .media {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px
+}
+.eco-single-blog-content .media .post-thumb {
+    padding: 3px;
+    background: #FFA700;
+    border-radius: 50%
+}
+.eco-single-blog-content .media .post-thumb img {
+    width: 43px;
+    height: 44px
+}
+.eco-single-blog-content .media-body span {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    padding: 3px 15px;
+    border-radius: 10px;
+    background: #FFA700
+}
+.eco-single-blog-content .media-body h4>a {
+    display: block;
+    color: #fff;
+    text-decoration: underline;
+    padding: 10px 0px;
+    margin: 10px 0px
+}
+ul.eco-blog-info li {
+    display: inline;
+    color: #1B1F20;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 10px
+}
+.eco-single-blog-content .media-body ul.eco-blog-info li{
+    color: #FFFFFF
+}
+ul.eco-blog-info li a{
+    color: #1B1F20;
+}
+.eco-single-blog-content .media-body ul.eco-blog-info li a{
+    background: none;
+    color: #ffffff;
+    font-size: 12px
+}
+.eco-single-blog-content .media-body ul.eco-blog-info li span{
+    background: none;
+    color: #FFA700;
+    padding: 5px
+}
+.eco-single-blog-content .media-body ul.eco-blog-info li a>span {
+    background: none;
+    color: #FFA700;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 0;
+    margin-right: 5px
+}
+.eco-blog-center {
+    margin-bottom: 27px
+}
+.eco-blog-center .post-thumb.media-left {
+    width: 130px;
+    height: 125px;
+    position: relative;
+    margin-right: 10px;
+}
+.eco-blog-center .post-thumb.media-left span {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+}
+.eco-blog-center .media-body{
+    padding: 4px
+}
+span.eco-blog-category {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    background: #FFA700;
+    padding: 1px 10px;
+    border-radius: 15px
+}
+.eco-blog-center .media-body h4>a {
+    font-size: 18px;
+    text-decoration: underline;
+    color: #FFA700;
+    display: block
+}
+.eco-blog-center .media-body p {
+    text-align: justify;
+    line-height: 18px;
+    margin: 9px 0px
+}
+.eco-blog-center:last-child{
+    margin-bottom: 0
+}
+.eco-blog-content-body p {
+    color: #818181
+}
+.eco-blog-right-body {
+    padding: 15px;
+    padding-top: 10px;
+}
+.eco-blog-image {
+    width: 100%;
+    height: 149px;
+    position: relative
+}
+.eco-blog-image span{
+    position: absolute;
+    left: 5px;
+    bottom: 10px
+}
+.eco-blog-right-body h4>a{
+    color: #FFA700;
+    text-decoration: underline;
+    display: block;
+    padding-bottom: 5px;
+    font-size: 18px
+}
+.eco-blog-right-body p{
+    text-align: justify;
+    margin-bottom: 10px;
+    line-height: 22px
+}
+/*================================================
+20 - BREADCUM CSS
+==================================================*/
+.eco-breadcum-area-start{
+    position: relative;
+    z-index: 1
+}
+.eco-breadcum-area-start:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #000000;
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    z-index: -1
+}
+ul.eco-breadcum li {
+    display: inline-block
+}
+ul.eco-breadcum li a {
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+    font-weight: 700
+}
+/*================================================
+21 - HISTORY CSS
+==================================================*/
+.eco-history-area-strt{
+    background: #efefef
+}
+.eco-single-history-part {
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #dfdfdf;
+    position: relative;
+    border-bottom: 5px solid #FFA700;
+    z-index: 1
+}
+.eco-single-history-part:before {
+    position: absolute;
+    left: 48%;
+    top: -25px;
+    width: 15px;
+    height: 15px;
+    background: #1B1F20;
+    content: '';
+    border-radius: 50%;
+    z-index: 1
+}
+.eco-single-history-part:after {
+    position: absolute;
+    left: 46%;
+    top: -12px;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: #FFA700;
+    -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+        transform: rotate(45deg)
+}
+.eco-single-history-part h5 {
+    background: #ffa700;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color: #ffff;
+    padding: 12px
+}
+.eco-single-history-part p {
+    color: #818181;
+    text-align: justify;
+    font-size: 14px;
+    padding: 8px
+}
+
+/*================================================
+22 - PAGINATE CSS
+==================================================*/
+.eco-paginate-area-satrt {
+    width: 100%;
+    margin-top: 30px
+}
+ul.eco-paginate li {
+    display: inline-block
+}
+ul.eco-paginate {
+    text-align: center
+}
+ul.eco-paginate li a {
+    display: inline-block;
+    padding: 4px 20px;
+    background: #FFA700;
+    color: #fff;
+    font-size: 22px
+}
+ul.eco-paginate li a.active {
+    background: #1B1F20
+}
+
+/*================================================
+23 - SIDEBAR CSS
+==================================================*/
+.eco-blog-content-body .col-md-4 {
+    border-right: 1px solid #efefef
+}
+.eco-sidebar .col-md-4 {
+    border: 0
+}
+.eco-sidebar-area{
+    background: #fcfcfc;
+}
+.eco-single-widget h4 {
+    text-transform: uppercase;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    background: #ffA700;
+    color: #fff;
+    font-size: 20px
+}
+.eco-single-widget {
+    padding:5px;
+    margin-bottom: 30px
+}
+ul.eco-caregories li a {
+    display: block;
+    padding: 10px;
+    color: #1B1F20;
+    text-transform: capitalize;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    font-size: 14px
+}
+ul.eco-caregories li a>span{
+    color: #FFA700
+}
+ul.eco-caregories li a:hover {
+    padding-left: 20px;
+    color: #FFA700
+}
+ul.eco-caregories li:first-child a {
+    padding-top: 0
+}
+ul.eco-caregories li:last-child a {
+    padding-bottom: 0
+}
+ul.eco-recent-post li a {
+    text-decoration: underline;
+    padding: 5px
+}
+ul.eco-caregories.eco-tags li a {
+    display: inline-block;
+    background: #ffA700;
+    margin-bottom: 5px;
+    color: #FFF;
+    padding: 10px 20.5px
+}
+ul.eco-caregories.eco-tags li {
+    display: inline
+}
+
+/*================================================
+24 - BLANK PAGE CSS
+==================================================*/
+
+.eco-blank-page-area-start h2 {
+    padding: 5px 10px;
+    background: #1B1F20;
+    display: inline-block;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-left: 5px solid #ffa700
+}
+.eco-blank-page-area-start a {
+    display: inline-block
+}
+.eco-blank-page-area-start a:hover,
+.eco-error-content a:hover{
+    color: #fff
+}
+
+/*================================================
+25 - ERROR PAGE CSS
+==================================================*/
+.eco-error-content strong {
+    font-size: 165px;
+    line-height: 1
+}
+
+/*================================================
+26 - COMMINGSOON CSS
+==================================================*/
+.eco-comming-soon-area-start{
+    width: 100%;
+    height: 100vh;
+    background: url('../image/commingsoon/comming-soon.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1
+}
+.eco-comming-soon-area-start:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #000;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    z-index: -1
+}
+.eco-comming-soon-content strong {
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 1
+}
+.eco-comming-soon-content p {
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 20px
+}
+span.syotimer-cell{
+    padding: 10px 18px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1
+}
+span.syotimer-cell:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #FFA700;
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    border-radius: 5px;
+    z-index: -1
+}
+span.syotimer-cell span {
+    display: block;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 35px
+}
+span.syotimer-cell__unit {
+    font-size: 20px!important;
+    text-transform: uppercase
+}
+span.syotimer-cell:last-child {
+    margin-right: 0
+}
+/*================================================
+27 - CONTACT CSS
+==================================================*/
+.eco-contact-area-start{
+    background: #EFEFEF
+}
+.eco-contact-address, .eco-contact-form-area {
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px
+}
+.eco-contact-area-start h5 {
+    margin-bottom: 3px;
+    text-transform: capitalize
+}
+.eco-contact-area-start p {
+    text-align: justify;
+    line-height: 22px;
+    margin-bottom: 25px;
+    font-size: 16px
+}
+.eco-contact-form-area input{
+    margin-bottom: 30px
+}
+.eco-contact-form-area button{
+    border: 0
+}
+
+/*================================================
+28 - SINGLE PAGE CSS
+==================================================*/
+.eco-single-blog-image img {
+    width: 100%;
+    height: 75vh
+}
+.eco-single-blog-image {
+    position: relative
+}
+.eco-single-blog-image span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #FFA700
+}
+.eco-single-blog-cat {
+    padding: 14px 0px
+}
+
+.eco-single-blog-cat span {
+    margin-right: 20px;
+    font-size: 14px
+}
+.eco-single-blog-cat span>i {
+    margin-right: 5px;
+    color: #FFA700
+}
+.eco-single-info h2 {
+    text-transform: capitalize;
+    margin-bottom: 10px
+}
+.eco-single-info p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-align: justify
+}
+.eco-related-tags {
+    padding: 15px 0px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd
+}
+.eco-related-tags h5 {
+    text-transform: capitalize;
+    margin-bottom: 10px
+}
+.eco-related-tags a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: capitalize;
+    background: #FFA700
+}
+.eco-single-info p.change-box {
+    padding: 20px;
+    background: #efefef;
+    border-left: 5px solid #FFA700
+}
+.eco-comments-area h5 {
+    margin-bottom: 20px
+}
+.eco-single-comment.media img {
+    padding: 3px;
+    border-radius: 50%;
+    background: #FFA700
+}
+.eco-single-comment.media .media-left {
+    margin-right: 10px
+}
+.eco-single-comment.media .media-body a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: inline-block
+}
+.eco-single-comment.media .media-body span {
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+    color: #ffA700;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+.eco-comments-area {
+    background: #efefef;
+    padding: 20px
+}
+.eco-single-comment.media {
+    margin-bottom: 20px
+}
+
+.eco-single-comment.media .media {
+    margin-top: 20px
+}
+.eco-single-comment.media .media-link a {
+    font-size: 14px;
+    display: inline-block;
+    padding: 3px 15px;
+    margin-top: 10px;
+    color: #fff;
+    text-transform: capitalize;
+    background: #FFA700
+}
+.eco-leave-commnet-area input{
+    margin-bottom: 30px
+}
+.eco-leave-commnet-area button{
+    border: 0
+}
+/*================================================
+29 - FOOTER CSS
+==================================================*/
+footer.eco-footer-area-start {
+    background: #1B1F20;
+    color: #fff;
+    padding-top: 70px
+}
+.eco-footer-content{
+    padding-bottom: 70px
+}
+.eco-footer-content h5 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    position: relative
+}
+.eco-footer-content h5:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -14px;
+    width: 28%;
+    height: 3px;
+    background: #FFA700
+}
+.eco-footer-about a {
+    display: block
+}
+.eco-footer-about a>img {
+    height: 60px;
+    width: 100%;
+    margin-bottom: 20px
+}
+.eco-footer-about p {
+    text-align: justify;
+    line-height: 22px;
+    margin-bottom: 15px
+}
+ul.eco-social-icon li{
+    display: inline-block
+}
+.eco-social-icon a {
+    display: inline-block;
+    width: 40px;
+    color: #fff;
+    height: 40px;
+    padding: 7px 12px;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-right: 7px;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out
+}
+.eco-social-icon a:hover{
+    -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+        transform: rotate(360deg)
+}
+.eco-social-icon a.facebook{
+    background: #4267B2
+}
+.eco-social-icon a.instagram{
+    background: #EB7836
+}
+.eco-social-icon a.youtube{
+    background: #FF0101
+}
+.eco-social-icon a.twitter{
+    background: #1C9CEA
+}
+.eco-social-icon a.whatsapp{
+    background: #2AC54D
+}
+.eco-recent-signle-post {
+    margin-bottom: 15px
+}
+.eco-recent-signle-post:last-child {
+    margin: 0;
+}
+.eco-social-icon a.pinterest{
+    background: #CB1F27
+}
+.eco-recent-signle-post .post-thumb {
+    margin-right: 10px
+}
+.eco-recent-signle-post .media-body p {
+    line-height: 20px;
+    margin-bottom: 10px
+}
+.eco-recent-signle-post .media-body span {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase
+}
+ul.eco-twitter-feed li {
+    display: block;
+    margin-bottom: 20px;
+    text-align: justify
+}
+ul.eco-twitter-feed li:last-child{
+    margin: 0
+}
+ul.eco-quick-link li {
+    display: block;
+    width: 50%;
+    float: left
+}
+ul.eco-quick-link li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 0px;
+    display: inline-block
+}
+ul.eco-quick-link li a>span {
+    margin-right: 10px
+}
+.eco-subscript-form {
+    padding-top: 25px;
+    overflow: hidden;
+    width: 100%
+}
+.eco-subscript-form form input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 27px;
+    outline: 0;
+    background: #1B1F20;
+    border: 1px solid #59676b;
+    color: #ffffff
+}
+.eco-subscript-form form button {
+    outline: 0;
+    border: 0;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: #ffffff;
+    background: #FFA700;
+    font-weight: 500
+}
+.eco-footer-submenu-content{
+    padding: 25px;
+    background: #252829
+}
+a.eco-btm-to-top {
+    position: fixed;
+    font-size: 40px;
+    right: 18px;
+    bottom: 0;
+    padding: 5px;
+    border-radius: 50%;
+    color: #FFA700;
+    display: inline-block;
+    z-index: 999999
+}
